@@ -1,11 +1,16 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import PromoBar from "./components/ui/promo-bar";
-import Hamburger from "./components/layout/hamburger";
+import MobileNavBar from "./components/layout/mobile-navbar";
 
 export default function Home() {
   return (
     <main>
       <PromoBar />
-      <Hamburger />
+      <div className="flex items-center">
+        <MobileNavBar />
+        //TODO: Add SVG logo here
+        <h1 className="text-2xl font-bold text-center">Sur</h1>
+      </div>
     </main>
   );
 }
