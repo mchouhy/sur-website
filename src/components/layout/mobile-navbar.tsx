@@ -22,17 +22,17 @@ export default function MobileNavBar() {
         </div>
       </button>
       <aside
-        className={`absolute top-16 left-0 w-full bg-white shadow-lg z-50 transition-transform duration-300 ease-in-out ${
+        className={`absolute top-18 left-0 w-full bg-white shadow-lg z-50 transition-transform duration-300 ease-in-out ${
           open ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <ul className="flex flex-col p-4">
+        <ul className="flex flex-wrap border-t border-concrete">
           {navbarLinks.map((link) => (
             <li
               key={link.href}
-              className="w-full border-b border-gray-300 uppercase"
+              className="w-full border-b border-gray-200 uppercase py-4 px-2"
             >
-              <Link href={link.href} className="text-lg font-medium">
+              <Link href={link.href} className="text-sm font-medium">
                 {link.label}
               </Link>
             </li>
