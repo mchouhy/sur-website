@@ -16,21 +16,21 @@ export default function MobileNavBar() {
         aria-label="Toggle menu"
       >
         <div className="space-y-1.5">
-          <span className="block w-5 h-[0.5] bg-gray-900"></span>
-          <span className="block w-5 h-[0.5] bg-gray-900"></span>
-          <span className="block w-5 h-[0.5] bg-gray-900"></span>
+          <span className="block h-[0.5] w-5 bg-gray-900"></span>
+          <span className="block h-[0.5] w-5 bg-gray-900"></span>
+          <span className="block h-[0.5] w-5 bg-gray-900"></span>
         </div>
       </button>
       <aside
-        className={`absolute top-18 left-0 w-full bg-white shadow-lg z-50 transition-transform duration-300 ease-in-out ${
+        className={`absolute top-20 left-0 z-50 w-full bg-white shadow-lg transition-transform duration-300 ease-in-out ${
           open ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <ul className="flex flex-wrap border-t border-concrete">
+        <ul className="flex flex-wrap border-t border-gray-200">
           {navbarLinks.map((link) => (
             <li
               key={link.href}
-              className="w-full border-b border-gray-200 uppercase py-4 px-2"
+              className="w-full border-b border-gray-200 px-2 py-4"
             >
               <Link href={link.href} className="text-sm font-medium">
                 {link.label}

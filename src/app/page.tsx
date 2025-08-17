@@ -8,7 +8,7 @@ export default function Home() {
       <header className="flex items-center py-2">
         <MobileNavBar />
         {/* Add SVG logo here */}
-        <h1 className="text-2xl font-bold text-center">Sur</h1>
+        <h1 className="text-center text-2xl">Luz & Mariano</h1>
       </header>
     </main>
   );
