@@ -29,7 +29,7 @@ export default function RootLayout({
           <SearchBar />
           <UserMenu />
         </header>
-        <hr className="border-0 border-b border-gray-200" />
+        <hr className="relative border-0 border-b border-gray-200" />
         <DesktopNavbar />
         {children}
       </body>

@@ -55,12 +55,12 @@ const components: { title: string; href: string; description: string }[] = [
 export function DesktopNavbar() {
   return (
     <NavigationMenu
-      viewport={false}
       className="mx-auto hidden max-w-7/12 md:flex"
+      viewport={true}
     >
       <NavigationMenuList className="flex gap-x-10">
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="">Home</NavigationMenuTrigger>
+          <NavigationMenuTrigger>Home</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-2 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
