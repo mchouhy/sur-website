@@ -6,13 +6,18 @@ import { Input } from "@/components/ui/input";
 import { SearchIcon } from "lucide-react";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Saira, Yrsa } from "next/font/google";
 import PromoBar from "@/components/ui/promo-bar";
-
-const saira = Saira({
-  variable: "--font-saira",
-  subsets: ["latin"],
-});
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuIndicator,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuViewport,
+} from "@/components/ui/navigation-menu";
+import { DesktopNavbar } from "@/components/layout/desktop-navbar";
 
 export const metadata: Metadata = {
   title: "Sur",
@@ -29,13 +34,13 @@ export default function RootLayout({
     <html lang="es">
       <body className={`font-saira antialiased`}>
         <PromoBar />
-        <header className="mx-auto flex max-w-7/12 items-center justify-between gap-x-8 py-4 md:justify-items-start md:py-5">
+        <header className="mx-auto flex max-w-10/12 items-center justify-between gap-x-8 py-4 md:justify-items-start md:py-5">
           <MobileNavBar />
           {/* Add SVG logo here */}
           <h1 className="text-center text-2xl text-nowrap">Luz & Mariano</h1>
           <form
             action="submit"
-            className="relative flex h-11 w-full max-w-5xl items-center rounded-md bg-[#EBEBEB]"
+            className="relative flex h-11 w-full max-w-[70rem] items-center rounded-md bg-[#EBEBEB]"
           >
             <Input
               className="h-full border-transparent px-6 text-[#747474] focus-visible:ring-[2px] focus-visible:ring-gray-300"
@@ -69,6 +74,7 @@ export default function RootLayout({
           </ul>
         </header>
         <hr className="border-0 border-b border-gray-200" />
+        <DesktopNavbar />
         {children}
       </body>
     </html>
