@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="es">
       <body className={`font-saira antialiased`}>
         <PromoBar />
-        <header className="mx-auto flex items-center justify-between gap-x-8 py-4 md:max-w-6/12 md:justify-items-start md:py-5 lg:max-w-7/12">
+        <header className="mx-auto flex items-center justify-between gap-x-8 py-4 text-2xl md:max-w-6/12 md:justify-items-start md:py-5 lg:max-w-7/12">
           <MobileNavBar />
           {/* Add SVG logo here */}
           <h1 className="text-center text-2xl text-nowrap">Luz & Mariano</h1>
