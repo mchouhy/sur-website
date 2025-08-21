@@ -61,7 +61,7 @@ export function DesktopNavbar() {
       <NavigationMenuList className="flex gap-x-10">
         <NavigationMenuItem>
           <NavigationMenuTrigger>Home</NavigationMenuTrigger>
-          <NavigationMenuContent className="bg-[[rgba(255,255,255,var(--bg-opacity))]">
+          <NavigationMenuContent>
             <ul className="grid gap-2 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
