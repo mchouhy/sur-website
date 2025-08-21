@@ -10,7 +10,7 @@ import { UserMenu } from "@/components/layout/user-menu";
 export const metadata: Metadata = {
   title: "Sur",
   description:
-    "Tienda online de muebles de microcemento artesanales y modernos. Diseño minimalista para interior y exterior.",
+    "Tienda online de muebles de microcemento para interior y exterior. Diseño minimalista, moderno y artesanal.",
 };
 
 export default function RootLayout({
@@ -25,7 +25,6 @@ export default function RootLayout({
           <PromoBar />
           <div className="mx-auto flex items-center justify-between gap-x-8 py-4 text-2xl md:max-w-6/12 md:justify-items-start md:py-5 lg:max-w-9/12">
             <MobileNavBar />
-            {/* Add SVG logo here */}
             <h1 className="text-center text-2xl text-nowrap">Luz & Mariano</h1>
             <SearchBar className="hidden md:flex md:w-full md:max-w-[70rem]" />
             <UserMenu />
